@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.font-vround {
+    font-family: $font-family-monospace;
+}
+.font-small {
+    font-size: 0.8rem;
+}
+
+[class^="text-row-"],
+[class*="text-row-"] {
+    text-overflow:ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.text-row-1 {
+    -webkit-line-clamp: 1;
+}
+.text-row-2 {
+    -webkit-line-clamp: 2;
+}
+.text-row-3 {
+    -webkit-line-clamp: 3;
+}
+
+.text-gray-6 {
+    color: $gray-600;
+}
+.text-gray-8 {
+    color: $gray-800;
+}
+.text-black {
+    color: $black;
+}

@@ -1,0 +1,47 @@
+[class^="icon-"],
+[class*="icon-"] {
+	position:relative;
+//    top:-2px;
+    display: inline-block;
+    vertical-align: middle;
+    @include text-hide;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.icon-more-primary {
+    width: 8px;
+    height: 16px;
+    @include retina-2x-background-image("#{$path-ui}icon-more-primary", "png", 8px, 16px);
+}
+.icon-more-success {
+    width: 8px;
+    height: 16px;
+    @include retina-2x-background-image("#{$path-ui}icon-more-success", "png", 8px, 16px);
+}
+.icon-side-contact {
+    width: 53px;
+    height: 53px;
+    @include retina-2x-background-image("#{$path-ui}icon-side-contact-primary", "png", 53px, 53px);
+}
+.icon-side-products {
+    width: 53px;
+    height: 53px;
+    @include retina-2x-background-image("#{$path-ui}icon-side-products-primary", "png", 53px, 53px);
+}
+.btn {
+    &:hover,
+    &:active,
+    &:focus {
+        .icon-more-primary,
+        .icon-more-success {
+            @include retina-2x-background-image("#{$path-ui}icon-more-white", "png", 8px, 16px);
+        }
+        .icon-side-contact {
+            @include retina-2x-background-image("#{$path-ui}icon-side-contact-white", "png", 53px, 53px);
+        }
+        .icon-side-products {
+            @include retina-2x-background-image("#{$path-ui}icon-side-products-white", "png", 53px, 53px);
+        }
+    }
+}

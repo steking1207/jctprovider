@@ -1,0 +1,93 @@
+    [!--temp.top--]
+    
+    <div class="push container-fluid px-0" id="kv">
+        <img class="img-fluid" src="/assets/img/ui/kv-index.jpg" alt="">
+    </div>
+
+    <div class="push container-fluid pt-10" id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title mb-6">Hot Products</div>
+                </div>
+                [e:loop={2,4,0,1}]
+                <div class="col-12 col-sm-6 col-lg-3 my-3">
+                    <a class="card" href="<?=$bqsr[titleurl]?>">
+                        <img class="card-img-top" src="<?=$bqr[titlepic]?>" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title text-row-1"><?=$bqr[title]?></h5>
+                            <p class="card-text text-row-2">
+                                <?=$bqr[smalltext]?>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                [/e:loop]
+                <div class="col-12 text-center">
+                    <a class="btn btn-outline-primary rounded px-6" href="/Products/">
+                        more <i class="icon-more-primary"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="push container-fluid my-10 py-10 index-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex align-items-center justify-content-between mb-5 pb-2 title title-news">
+                        <div class="h4">News</div>
+                        <a class="btn btn-outline-primary rounded py-1" href="/News/">
+                            more <i class="icon-more-primary"></i>
+                        </a>
+                    </div>
+                    <div class="list-group list-group-flush list-news">
+                        [e:loop={4,5,0,0}]
+                        <a href="<?=$bqsr[titleurl]?>" class="list-group-item list-group-item-action">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-12 col-lg-9">
+                                    <div class="text-row-1">
+                                        <?=$bqr[title]?>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 text-lg-right">
+                                    <small><?=date('Y-m-d',$bqr[newstime]);?></small>
+                                </div>
+                            </div>
+                        </a>
+                        [/e:loop]
+                    </div>
+                </div>
+                
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex align-items-center justify-content-between mb-5 pb-2 title title-article">
+                        <div class="h4">Article</div>
+                        <a class="btn btn-outline-success rounded py-1" href="/article/">
+                            more <i class="icon-more-success"></i>
+                        </a>
+                    </div>
+                    <div class="list-group list-group-flush list-news list-article">
+                        [e:loop={60,5,0,0}]
+                        <a href="<?=$bqsr[titleurl]?>" class="list-group-item list-group-item-action">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-12 col-lg-9">
+                                    <div class="text-row-1">
+                                        <?=$bqr[title]?>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 text-lg-right">
+                                    <small><?=date('Y-m-d',$bqr[newstime]);?></small>
+                                </div>
+                            </div>
+                        </a>
+                        [/e:loop]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    [!--temp.customer--]
+
+    [!--temp.down--]

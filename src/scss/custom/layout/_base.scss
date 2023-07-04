@@ -1,0 +1,12 @@
+//body, html {
+//    height: 100%;
+//}
+body {
+    background: url(#{$path-ui}bg-body.jpg) center 0 repeat-x $white;
+}
+a {
+    @include transition(all 0.2s ease);
+    &:hover {
+        text-decoration: none;
+    }
+}

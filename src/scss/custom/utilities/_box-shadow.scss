@@ -1,0 +1,7 @@
+// Shadow
+.bs {
+    @include box-shadow(0 0 10px rgba(0,0,0,.3));
+}
+.bs-strong {
+    @include box-shadow(18px 18px 5px rgba(9,28,47,.3));
+}
