@@ -1,84 +1,44 @@
-@@include('../partial/global/_head.html')
-<body id="top">
+@@include('../partial/global/_top.html',{
+    nav1:'Home',
+    nav2:'Company Overview',
+    nav3:'Products',
+    nav4:'Our Customer',
+    nav5:'News',
+    nav6:'Contact Us',
+    nav7:'Article',
+})
+    <div class="push container-fluid px-0 kv-index" id="kv">
+        <div class="kv-img"></div>
+        <div class="kv-slogan display-4 text-white font-weight-bold">化學濾網權威 <br class="d-block d-lg-none">預防空污首席</div>
+    </div>
 
-    <nav class="pushy pushy-right bg-white">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Company Overview</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Our Customer</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Article</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="site-overlay"></div>
-
-    <header class="push container-fluid" id="header">
-        <div class="container navbar-light">
-            <div class="row align-items-center">
-                <div class="col text-left text-lg-center py-2 py-lg-4">
-                    <a href="[!--news.url--]">
-                        <img class="img-fluid" src="assets/img/ui/logo-jctprovider.png" srcset="assets/img/ui/logo-jctprovider@2x.png 2x" alt="JCT Provider">
-                    </a>
+    <div class="push container-fluid py-10" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="section-title w-100 mb-6">公司簡介</div>
+                    <div class="lead py-0 py-lg-8">
+                        <p>
+                            榮宗科技成立於西元2012 年。公司成員已有十年以上半導體設備材料以及光電設備材料之銷售經驗。主要營業項目為高效能化學濾網、進口之半導體、光電相關產品，內容包括半導體PCB 設備、不銹鋼、石英、陶瓷及零件維修等。
+                        </p>
+                        <p>
+                            主要服務客戶為：半導體製造廠、TFT LCD 製造廠等…。維持專業水準及有效率的服務，一直是榮宗團隊的信念與目標。竭誠歡迎您加入，使我們的團隊更加茁壯！
+                        </p>
+                    </div>
                 </div>
-                <div class="col d-lg-none text-right">
-                    <button class="navbar-toggler bg-white p-1 menu-btn" type="button">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                
+                <div class="col-12 col-lg-6">
+                    <div class="section-title w-100 mb-6 border-success text-success">核心價值</div>
+                    <div>
+                        <img class="img-fluid mb-4" src="assets/img/ui/img-core.png" alt="核心價值">
+                        <p class="text-center mb-0">榮宗提供快速、客製化的設計和製造服務，來滿足客戶的要求。</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    
-    <div class="container-fluid d-none d-lg-block" id="nav">
-        <div class="container">
-            <ul class="nav justify-content-center nav-fill">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Company Overview</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Our Customer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Article</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="push container-fluid px-0" id="kv">
-        <img class="img-fluid" src="/assets/img/ui/kv-index.jpg" alt="">
     </div>
 
-    <div class="push container-fluid pt-10" id="main">
+    <div class="push container-fluid py-10" id="main">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -86,7 +46,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 my-3">
                             <a class="card" href="">
-                                <img class="card-img-top" src="http://www.jctprovider.com.tw/d/file/Products/Spare%20Parts%20Products/%E5%BE%AE%E5%AD%94%E5%8A%A0%E5%B7%A5/2018-05-14/f891d1e93fc0b0fbf67051040ec3d9c2.png" alt="">
+                                <img class="card-img-top" src="https://www.jctprovider.com.tw/d/file/Products/Refurbishing%20Service/p11/2018-11-02/32409871eea0a94258033181893a2e20.jpg" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title text-row-1">System board repair &amp; design</h5>
                                     <p class="card-text text-row-2">
@@ -97,7 +57,7 @@
                         </div>
                         <div class="col-12 col-sm-6 col-lg-3 my-3">
                             <a class="card" href="">
-                                <img class="card-img-top" src="http://www.jctprovider.com.tw/d/file/Products/Refurbishing%20Service/%E5%BD%B1%E5%83%8F%E5%8D%A1PCIE/2017-09-14/516b086653c42afaf3ad2feb52423354.jpg" alt="">
+                                <img class="card-img-top" src="https://www.jctprovider.com.tw/d/file/Products/Representative%20Business/%E9%BC%8E%E6%A6%AEKJ%20(%E3%82%B1%E3%83%9F%E3%82%AB%E3%83%AB%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC)/2018-10-28/88646870ebbdeecbf18516fa22cac613.jpg" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title text-row-1">KJ Filtration</h5>
                                     <p class="card-text text-row-2">
@@ -121,7 +81,7 @@
                         </div>
                 <div class="col-12 col-sm-6 col-lg-3 my-3">
                             <a class="card" href="">
-                                <img class="card-img-top" src="http://www.jctprovider.com.tw/d/file/Products/Spare%20Parts%20Products/E-chuck%20refurbishing/2015-05-18/a431ffcdc758794fe07dc139bce9195d.jpg" alt="">
+                                <img class="card-img-top" src="https://www.jctprovider.com.tw/d/file/Products/Refurbishing%20Service/p11/2018-11-02/32409871eea0a94258033181893a2e20.jpg" alt="">
                                 <div class="card-body">
                                     <h5 class="card-title text-row-1">System board repair &amp; design</h5>
                                     <p class="card-text text-row-2">
@@ -139,83 +99,9 @@
         </div>
     </div>
     
-    <div class="push container-fluid my-10 py-10 index-news">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center justify-content-between mb-5 pb-2 title title-news">
-                        <div class="h4">News</div>
-                        <a class="btn btn-outline-primary rounded py-1" href="">
-                            more <i class="icon-more-primary"></i>
-                        </a>
-                    </div>
-                    <div class="list-group list-group-flush list-news">
-                        <a href="[!--titleurl--]" class="list-group-item list-group-item-action">
-                            <div class="row justify-content-between align-items-center">
-                                <div class="col-12 col-lg-9">
-                                    <div class="text-row-1">
-                                        [!--smalltext--][!--smalltext--][!--smalltext--][!--smalltext--][!--smalltext--][!--smalltext--]
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-3 text-lg-right">
-                                    <small>[!--newstime--]</small>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="[!--titleurl--]" class="list-group-item list-group-item-action">
-                            <div class="row justify-content-between align-items-center">
-                                <div class="col-12 col-lg-9">
-                                    <div class="text-row-1">
-                                        [!--smalltext--]
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-3 text-lg-right">
-                                    <small>[!--newstime--]</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex align-items-center justify-content-between mb-5 pb-2 title title-article">
-                        <div class="h4">Article</div>
-                        <a class="btn btn-outline-success rounded py-1" href="">
-                            more <i class="icon-more-success"></i>
-                        </a>
-                    </div>
-                    <div class="list-group list-group-flush list-news list-article">
-                        <a href="[!--titleurl--]" class="list-group-item list-group-item-action">
-                            <div class="row justify-content-between align-items-center">
-                                <div class="col-12 col-lg-9">
-                                    <div class="text-row-1">
-                                        [!--smalltext--]
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-3 text-lg-right">
-                                    <small>[!--newstime--]</small>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="[!--titleurl--]" class="list-group-item list-group-item-action">
-                            <div class="row justify-content-between align-items-center">
-                                <div class="col-12 col-lg-9">
-                                    <div class="text-row-1">
-                                        [!--smalltext--]
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-3 text-lg-right">
-                                    <small>[!--newstime--]</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @@include('../partial/index/_news.html')
     
-    <div class="push container-fluid mt-6" id="customer">
+    <div class="push container-fluid py-10 bg-white" id="customer">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -257,7 +143,7 @@
                             <img class="mx-2 mb-2" src="assets/img/ui/logo-footer.png" srcset="assets/img/ui/logo-footer@2x.png 2x" alt="JCT Provider">
                         </div>
                         <div class="col-12 col-sm-10">
-                            <div class="text-muted">Copyright &copy;2018 Jung Chung Technology Corp.</div>
+                            <div class="text-muted">Copyright &copy;2023 Jung Chung Technology Corp.</div>
                             <div class="text-muted">Hsinchu office: No.33, Wencai St.,Zhubei City, Hsinchu County, 302, Taiwan(R.O.C)</div>
                             <hr>
                             <ul class="nav">
