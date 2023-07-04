@@ -42,7 +42,8 @@ input[type="date"] {
     &:focus {
         @include box-shadow(0 0 15px rgba(0,0,0,.15));
         .card-img-top {
-            @include transform(scale(1.1));
+            transform: scale(1,1);
+            // @include transform(scale(1.1));
         }
     }
 }
