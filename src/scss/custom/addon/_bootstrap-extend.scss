@@ -11,9 +11,11 @@
 //            top:50%;
 //            right: 20px;
 //            margin-top:-10px;
-        font-family: "FontAwesome" !important;
+        font-family: "Font Awesome 5 Free" !important;
         font-weight: 900;
         line-height: 1;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
     }
     &[aria-expanded="true"] {
         &:after {
